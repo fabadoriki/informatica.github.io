@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>Equipo</title>
+ <meta charset="utf-8">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+ <script>
+    $(document).ready(function(){
+      $("#tienda").click(function(){
+        $("#tenda").slideToggle("slow");
+      });
+    });
+</script>
+ <style>
+ body {
+ background: rgb(156, 255, 207);
+ font-family: Arial, Helvetica, sans-serif;
+ }
+ #titulo{
+ font-size: 40px;
+ text-align: center;
+ }
+ h1{
+ font-size:30px;
+ }
+ #a{
+ background-color: rgb(225, 245, 20);
+ border: 5px;
+ border-style: double;
+ border-color: rgb(89, 24, 6);
+ }
+ #b{
+ background-color: rgb(48, 132, 230);
+ border: 5px;
+ border-style: dotted;
+ border-color: white;
+ }
+ #c{
+ background-color: rgb(130, 206, 31);
+ border: 5px;
+ border-style: dashed solid;
+ border-color: yellow;
+ }
+ #d{
+ background-color: white;
+ border: 5px;
+ border-style: dashed;
+ border-color: yellow;
+ }
+ #e{
+ background-color: rgb(250, 207, 42);
+ border: 5px;
+ border-style: dotted;
+ border-color: white;
+ }
+ #f{
+ background-color: rgb(255, 237, 168);
+ border: 5px;
+ border-style: dashed dotted;
+ border-color: orange;
+ }
+ #g{
+ background-color: rgb(255, 152, 8);
+ border: 5px;
+ border-style: solid dotted;
+ border-color: black;
+ }
+ #h{
+ background-color: rgb(4, 4, 180);
+ border: 5px;
+ border-style: solid dashed;
+ border-color: red;
+ }
+ #i{
+ background-color: rgb(228, 8, 8);
+ border: 5px;
+ border-style: dotted solid;
+ border-color: blue;
+ }
+ #j{
+ background-color: rgb(0, 0, 0);
+ color: white;
+ border: 5px;
+ border-style: inset;
+ }
+ #m{
+ background-color: rgb(167, 167, 167);
+ border: 5px;
+ border-style: outset;
+ }
+ #k{
+ background-color: rgb(225, 81, 0);
+ border: 5px;
+ border-style: groove;
+ }
+ #l{
+ background-color: rgb(147, 14, 174);
+ border: 5px;
+ border-style: solid dashed dotted groove;
+ }
+ th{
+ border: 2px solid;
+ background: rgb(247, 153, 77);
+ }
+ td{
+ border: 2px solid;
+ font-family: bold;
+ text-align: center;
+ }
+ #buscador{
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: visible;
+ background-color: #333;
+ position: fixed;
+ top: 0;
+ width: 100%;
+ z-index: 1;
+ }
+ .menu{
+ display: block;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+ float: left;
+ font-weight: bold;
+ color: white;
+ }
+.menu a{
+ color: white;
+ text-decoration: none;
+}
+.menu:hover {
+  background-color: #ddd;
+  color: black;
+}
+.menu a :hover{
+  color: rgb(0, 0, 0);
+}
+.club {
+ background-color: #333;
+ color: white;
+ font-size: 16px;
+ border: none;
+ cursor: pointer;
+ font-weight: bold;
+}
+.club:hover{
+    background-color: #f1f1f1;
+    color: #333;
+}
+.nose {
+ position: relative;
+ display: inline-block;
+}
+
+.contenido {
+ display: none;
+ position: absolute;
+ background-color: #f9f9f9;
+ min-width: 160px;
+ box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+ z-index: 2;
+}
+
+.contenido a {
+ color: black;
+ padding: 12px 16px;
+ text-decoration: none;
+ display: block;
+}
+
+.contenido a:hover {background-color: #f1f1f1}
+
+.nose:hover .contenido {
+ display: block;
+}
+ </style>
+ </head>
+ <body>
+ <div>
+ <ul id="buscador">
+ <li class="menu"> 
+ <a href="index.html"><img src="https://images.yulava.com/O3dQJlqDlZ534YTTcnkCaQdF8tf22-eC1fVTArwfs7w/resize:fit:600:600/Z3M6Ly9jbG91ZHN0b3JhZ2UueXVsYXZhLmNvbS95dWxhdmEvZW50aXRpZXMvaW1hZ2UvNTU2ZGEzYzAtZjc1ZC0xMWViLWE2ODktNTFiMGI1MmZiOTk5LnBuZw.png" width="35px"></a>
+ </li>
+ <li class="menu"><a href="equipo.html">Primer Equipo</a></li>
+ <li class="menu"><a href="entradas.html">Entradas</a></li> 
+ <li class="menu" id="tienda" style="cursor: pointers;"><div id="tenda" style="cursor: pointer;">Tienda</div></li>
+ <li class="menu"><a href="Himnos.html">HIMNO</a></li>
+ <li class="menu"><div class="nose">
+ <button class="club">Club</button>
+ <div class="contenido">
+ <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Socios</a>
+ <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Patrocinadores</a>
+ <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Empresa</a>
+ </div>
+ </div></li>
+ </ul>
+ </div>
+
+ <h1 id="titulo" style="margin-top: 75px;">Nuestros 10 jugadores de La Canyada F.C</h1>
+
+ <h1> Numero 10 </h1>
+ <h2> Bob Esponja </h2>
+ <img src="https://assets.stickpng.com/images/58bf1d11e443f41d77c734a5.png" width="275">
+ <p>Portero<br>
+ <strong>Bob Esponja</strong></p>
+ <table id="a">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Media:</td>
+ <td> 65 </td>
+ <td> 85 </td>
+ <td> 70 </td>
+ <td> 35 </td>
+ <td> 40 </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> Numero 9 </h1>
+ <h2> Doraemon </h2>
+ <img src="https://www.pngplay.com/wp-content/uploads/10/Doraemon-PNG-Photo-Image.png" width="275">
+ <p>Mediocentro<br>
+ <strong>Doraemon</strong> </p>
+
+ <table id="b">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td> Media:</td>
+ <td> 70 </td>
+ <td> 70 </td>
+ <td> 30 </td>
+ <td> 90 </td>
+ <td> 60 </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> NUmero 8 </h1>
+ <h2>Ash Ketchup</h2>
+ <img src="https://images.wikidexcdn.net/mwuploads/wikidex/0/02/latest/20221113131941/Ash_%28Viajes_Pok%C3%A9mon%29_2.png" width="195">
+ <p>Delantero<br>
+ <strong>Ash Ketchum</strong> </p>
+
+ <table id="c">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase</th>
+ <th> Regate</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td> Media:</td>
+ <td> 75 </td>
+ <td> 65 </td>
+ <td> 75 </td>
+ <td> 75 </td>
+ <td> 85 </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> NUmero 7 </h1>
+ <h2> Finn el HUMANO</h2>
+ <img src="https://cn.i.cdn.ti-platform.com/content/327/adventure-time/showpage/es/adventuretime-characters.9f22e681.png" width="450">
+ <p>
+ Portero<br>
+ <strong>Finn el HUMANO</strong>
+ </p>
+ <table id="d">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase</th>
+ <th> Regate</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Media:</td>
+ <td> 75 </td>
+ <td> 80 </td>
+ <td> 50 </td>
+ <td> 60 </td>
+ <td> 30 </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> Numero 6 </h1>
+ <h2> Naruto </h2>
+ <img src="https://i0.wp.com/eltallerdehector.com/wp-content/uploads/2022/06/39792-naruto-png.png?resize=600%2C600&ssl=1" width="195">
+ <p>
+ Defensa<br>
+ <strong>Naruto Uzumaki</strong>
+ </p>
+ <table id="g">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa </th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Media:</td>
+ <td> 85 </td>
+ <td> 95</td>
+ <td> 85 </td>
+ <td> 70 </td>
+ <td> 65 </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> Numero 5 </h1>
+ <h2> Sonic </h2>
+ <img src="https://www.pngplay.com/wp-content/uploads/11/Sonic-The-Hedgehog-PNG-HD-Quality.png" width="225">
+ <p>
+ Delantero<br>
+ <strong>Sonic</strong>
+ </p>
+ <table id="h">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate </th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td> Media:</td>
+ <td> 80 </td>
+ <td> 55 </td>
+ <td> 95 </td>
+ <td> 85 </td>
+ <td> 95 </td>
+ </tr>
+ </tbody>
+ </table>
+ <h1> Numero 4 </h1>
+ <h2> Mario Bros </h2>
+ <img src="https://i.pinimg.com/originals/d8/bf/a3/d8bfa319e67b51d35ad73aeb39fce320.png" width="195">
+ <p>
+ Mediocentro<br>
+ <strong>Mario</strong>
+ </p>
+ <table id="i">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate </th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td> Media:</td>
+ <td> 85 </td>
+ <td> 85 </td>
+ <td> 75 </td>
+ <td> 80 </td>
+ <td> 100 </td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> Numero 3</h1>
+ <h2> Mickey Mouse</h2>
+ <img src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a10394db-6723-4145-b0fa-a39278de833e/de93pjg-27b6e3ff-31fb-4482-acd3-2e189dfe8264.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2ExMDM5NGRiLTY3MjMtNDE0NS1iMGZhLWEzOTI3OGRlODMzZVwvZGU5M3BqZy0yN2I2ZTNmZi0zMWZiLTQ0ODItYWNkMy0yZTE4OWRmZTgyNjQucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.7E_u9scZC8feFG0_W_lSWlPV318AqOqdBNSL0nIEDaQ" width="225">
+ <p>
+ Delantero<br>
+ <strong>Mickey Mouse</strong>
+ </p>
+ <table id="j">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate </th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Media:</td>
+ <td>90</td>
+ <td>80</td>
+ <td>80</td>
+ <td>90</td>
+ <td>95</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> Numero 2 </h1>
+ <h2> Goku </h2>
+ <img src="https://i.pinimg.com/originals/e4/d0/61/e4d06193bc75257b6c4bf3b1e07f5d2f.png" width="195">
+ <p>
+ Defensa<br>
+ <strong>Goku</strong> 
+ </p>
+ <table id="k">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa </th>body{
+ font-family: Arial, Helvetica, sans-serif;
+ }
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate </th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Media:</td>
+ <td>95</td>
+ <td>95</td>
+ <td>90</td>
+ <td>65</td>
+ <td>65</td>
+ </tr>
+ </tbody>
+ </table>
+
+ <h1> Numero 1 </h1>
+ <h2> Vegetta 777</h2>
+ <img src="https://www.nicepng.com/png/full/227-2278546_buscar-con-google-mods-para-minecraft-minecraft-pe.png" width="195">
+ 
+ <p>
+ <strong>Vegetta</strong> 
+ </p>
+
+ <table id="l">
+ <thead>
+ <tr>
+ <th>.</th>
+ <th> Fisico</th>
+ <th> Defensa</th>
+ <th> Velocidad </th>
+ <th> Tiro/Pase </th>
+ <th> Regate </th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Media:</td>
+ <td>100</td>
+ <td>100</td>
+ <td>100</td>
+ <td> 45</td>
+ <td>60</td>
+ </tr>
+ </tbody>
+ </table>
+ 
+ </body>
+</html>

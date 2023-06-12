@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIMNO</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+      $(document).ready(function(){
+        $("#tienda").click(function(){
+          $("#tenda").slideToggle("slow");
+        });
+      });
+    </script>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    #buscador{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: visible;
+        background-color: #333;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .menu{
+      display: block;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      float: left;
+      font-weight: bold;
+      color: white;
+    }
+.menu a{
+  color: white;
+  text-decoration: none;
+}
+.menu:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+.menu a :hover{
+  color: rgb(0, 0, 0);
+}
+.club {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.club:hover{
+    background-color: #f1f1f1;
+    color: #333;
+}
+.nose {
+  position: relative;
+  display: inline-block;
+}
+
+.contenido {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.contenido a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contenido a:hover {background-color: #f1f1f1}
+
+.nose:hover .contenido {
+  display: block;
+}
+    </style>
+</head>
+<body style="background-color: brown;">
+    <div>
+        <ul id="buscador">
+           <li class="menu"> 
+            <a href="index.html"><img src="https://images.yulava.com/O3dQJlqDlZ534YTTcnkCaQdF8tf22-eC1fVTArwfs7w/resize:fit:600:600/Z3M6Ly9jbG91ZHN0b3JhZ2UueXVsYXZhLmNvbS95dWxhdmEvZW50aXRpZXMvaW1hZ2UvNTU2ZGEzYzAtZjc1ZC0xMWViLWE2ODktNTFiMGI1MmZiOTk5LnBuZw.png" width="35px"></a>
+           </li>
+           <li class="menu"><a href="equipo.html">Primer Equipo</a></li>
+          <li class="menu"><a href="entradas.html">Entradas</a></li> 
+          <li class="menu" id="tienda" style="cursor: pointers;"><div id="tenda" style="cursor: pointer;">Tienda</div></li>
+          <li class="menu"><a href="Himnos.html">HIMNO</a></li>
+          <li class="menu"><div class="nose">
+            <button class="club">Club</button>
+            <div class="contenido">
+            <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Socios</a>
+            <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Patrocinadores</a>
+            <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Empresa</a>
+            </div>
+        </div></li>
+        </ul>
+    </div>
+    <iframe width="1910px" height="935px" src="https://www.youtube.com/embed/GWCldYPEsl4?autoplay=1&controls=0&loop=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+</body>
+</html>

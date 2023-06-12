@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script>
+$(document).ready(function(){
+  $("#tienda").click(function(){
+    $("#tenda").slideToggle("slow");
+  });
+});
+$(document).ready(function(){
+  $("#encontrar").click(function(){
+    window.location.reload()
+  });
+});
+$(document).ready(function(){
+  $("#quitar").click(function(){
+    $(".anuncios").hide();
+  });
+  $("#poner").click(function(){
+    $(".anuncios").show();
+  });
+});
+    </script>
+    
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSYAIxV4fqByrGwOA4zw1sJuHEdUjHbV_nDrVzqglxGdNjiNqVB03Yl16OYn-SRlwbhorw&usqp=CAU);
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url(https://www.redusers.com/noticias/wp-content/uploads/2018/05/ticket-650x434.jpg);
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+#buscador {
+  overflow: hidden;
+  background-color: #333;
+  z-index: 1;
+}
+
+/* Style the topnav links */
+.menu {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.menu:hover {
+  background-color: #ddd;
+  color: rgb(0, 0, 0);
+}
+.menu a{
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+.menu a :hover{
+  color: rgb(0, 0, 0);
+}
+.club {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}
+.club:hover{
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.nose {
+  position: relative;
+  display: inline-block;
+}
+
+.contenido {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+.contenido a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.contenido a:hover {background-color: #f1f1f1}
+
+.nose:hover .contenido {
+  display: block;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  padding-left: 20px;
+}
+
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow-y: hidden;
+}
+.pard{
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+  border-radius: 15px;
+  overflow-y: hidden;
+}
+
+.puto{
+    background-color: white;
+    overflow-y: visible;
+    display: inline-block;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 15px;
+}
+#fecha{
+    border-style: solid;
+    border-color: black;
+    width: 200px;
+    height: 50px;
+    font-size: 25px;
+}
+#numeros{
+    border-style: solid;
+    border-color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
+#busqueda{
+    border-style: solid;
+    border-color: black;
+    width: 150px;
+    height: 50px;
+    font-size: 25px;
+}
+#encontrar{
+    background-color: #333;
+    color: whitesmoke;
+    text-align: center;
+    height: 30px;
+    width: 95px;
+    border-style: solid;
+    border-color: black;
+    border-radius:5px ;
+    cursor: pointer;
+}
+.palabras{
+    float: right;  
+    position:absolute;
+    margin-left: 960px; 
+    margin-top: 300px;
+}
+.boton{
+    float: right; 
+    margin-top: 440px;
+    margin-left: 965px; 
+    position: absolute; 
+    z-index:2;
+}
+#comprar{
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    text-align: center;
+    height: 80px;
+    width: 250px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+/* Clear floats after the columns */
+.row::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.puter{
+    width: 100%;
+    background-color: #0a141d;
+    margin-top: 10%;
+}
+.puter .uno{
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:50px;
+    padding: 45px 0px;
+}
+.puter .uno .caja figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.puter .uno .caja h2{
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+.puter .uno .caja p{
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.puter .uno .tito a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: #0d2033;
+    text-align: center;
+    transition: all 300ms ease;
+}
+.puter .uno .tito a:hover{
+    color: aqua;
+}
+.puter .dos{
+    background-color: #0a1a2a;
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;
+}
+.puter .dos small{
+    font-size: 15px;
+}
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Entradas</h1>
+  <p style="font-weight: bolder;">Realiza la compra de entradas online</p>
+</div>
+
+<div>
+    <ul id="buscador">
+       <li class="menu"> 
+        <a href="index.html"><img src="https://images.yulava.com/O3dQJlqDlZ534YTTcnkCaQdF8tf22-eC1fVTArwfs7w/resize:fit:600:600/Z3M6Ly9jbG91ZHN0b3JhZ2UueXVsYXZhLmNvbS95dWxhdmEvZW50aXRpZXMvaW1hZ2UvNTU2ZGEzYzAtZjc1ZC0xMWViLWE2ODktNTFiMGI1MmZiOTk5LnBuZw.png" width="35px"></a>
+       </li>
+       <li class="menu"><a href="equipo.html">Primer Equipo</a></li>
+      <li class="menu"><a href="entradas.html">Entradas</a></li> 
+      <li class="menu" id="tienda" style="cursor: pointers;"><div id="tenda" style="cursor: pointer;">Tienda</div></li>
+      <li class="menu"><a href="Himnos.html">HIMNO</a></li>
+      <li class="menu"><div class="nose">
+        <button class="club">Club</button>
+        <div class="contenido">
+        <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Socios</a>
+        <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Patrocinadores</a>
+        <a href="https://i0.wp.com/learn.onemonth.com/wp-content/uploads/2017/08/1-10.png?w=845&ssl=1">Empresa</a>
+        </div>
+    </div></li>
+    </ul>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="puto">
+        <div style="float: left; margin-left: 30px;">
+        <h3>Fecha:</h3>
+        <input type="date" id="fecha" name="trip-start" value="2023-06-14" min="2023-06-14" max="2023-12-31">
+        </div>
+        <div style="float: left; margin-left: 30px;">
+            <h3>Precio de la entrada:</h3>
+        <label><input type="checkbox" id="click" value="first_checkbox" style="margin-bottom: 10px;">20€-50€</label><br>
+        <label><input type="checkbox" id="click" value="first_checkbox" style="margin-bottom: 10px;">100€-150€</label><br>
+        <label><input type="checkbox" id="click" value="first_checkbox" style="margin-bottom: 10px;">200€-300€</label><br>
+        <label><input type="checkbox" id="click" value="first_checkbox" style="margin-bottom: 10px;">1000€-3000€</label><br>
+        </div>
+        <div style="float: left; margin-left: 30px;">
+            <label for="numeros"><h3> Personas: </h3></label>
+            <input type="number" id="numeros" name="numeros" min="1" max="10">
+        </div>
+        <div style="float: left; margin-left: 30px;">
+            <label for="busqueda"><h3>Preguntas que tengas:</h3></label>
+            <input type="search" id="busqueda" name="q">
+            <button style="background-color: #333; color: white; width: 75px; height: 25px;">Buscar</button> 
+        </div>
+        <div style="float: left; margin-top: 200px;">
+            <button id="encontrar">Encontrar</button>
+        </div>
+    </div>
+    <div class="card">
+        <div style="float: left;">
+            <image style="border-radius: 15px; width: 400px; height: 500px;" src="https://www.fcbarcelona.com/fcbarcelona/photo/2018/06/20/08e87088-1cec-4a1b-b4fc-2a69163db12f/AvzugnQW.jpg"> 
+        </div>
+        <div style="float: left; padding-left:20px ;">
+            <h2>Entradas 43 <br>
+                Partido de primera división española
+            </h2>
+            <h3>Fecha:</h3><p>16 de Junio de 2023</p>
+            <h3>Hora:</h3><p>12:00-15:00</p>
+            <h3>Ubicación:</h3><p><a style="color: black;" href="https://www.google.es/maps/place/Campo+F%C3%BAtbol+Sala+La+Ca%C3%B1ada/@39.5214185,-0.4865168,17.08z/data=!4m6!3m5!1s0xd605af94c9ed693:0xd06a39d1ca8ddf6c!8m2!3d39.5214221!4d-0.4841781!16s%2Fg%2F11c3170nsy?entry=ttu">·Campo Fútbol Sala La Cañada</a></p>
+        </div>
+        <div class="palabras">
+            <p style="font-size: 30px;">Desde:</p>
+            <p style="font-size: 20px;">20€</p>
+        </div>
+        <div class="boton">
+            <a href="https://cdn.memegenerator.es/imagenes/memes/full/31/92/31927773.jpg"><button id="comprar">Comprar</button></a>
+        </div>
+    </div>
+  </div>
+  <div>
+    <div class="rightcolumn">
+        <div class="pard">
+            <button style="background-color: white; float: right; cursor: pointer;" id="quitar">X</button>
+            <button style="background-color: white; float: left; cursor: pointer;" id="poner">O</button>
+            <div class="anuncios">
+            <a href="https://cdn.memegenerator.es/imagenes/memes/full/31/92/31927773.jpg"><image style="border-style: double;" width="350px" height="335px" src="https://scontent-bcn1-1.xx.fbcdn.net/v/t1.6435-9/35935742_1878834645508854_7314360306161942528_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_ohc=1Lc8YFPvBtcAX_oNxB2&_nc_ht=scontent-bcn1-1.xx&oh=00_AfCDZCmqR6FDkDgXvAn2QVkiMPTt84cqLCMRJFx5kWh7og&oe=64AEE8DA"></image></a>
+            </div>
+            <div class="anuncios">
+                <a href="https://cdn.memegenerator.es/imagenes/memes/full/31/92/31927773.jpg"><image style="border-style: double;" width="350px" height="280px" src="https://images.ecestaticos.com/6tLHV0zFZB4mtCg2pFgNOEdBbDI=/0x27:538x809/1440x1920/filters:fill(white):format(jpg)/f.elconfidencial.com%2Foriginal%2Fc09%2F7ac%2F5b9%2Fc097ac5b927181709b746fc79633fccc.jpg"></a>
+            </div>
+        </div>
+        <div class="card">
+            <h3>LUIS...</h3>
+            <p>......APRUEBAME........ porfa :)</p>
+        </div>
+    </div>
+  </div>
+</div>
+
+<div>
+    <footer class="puter">
+        <div class="uno">
+            <div class="caja">
+                <figure>
+                    <a href="index.html">
+                        <img width="50%" src="https://images.yulava.com/O3dQJlqDlZ534YTTcnkCaQdF8tf22-eC1fVTArwfs7w/resize:fit:600:600/Z3M6Ly9jbG91ZHN0b3JhZ2UueXVsYXZhLmNvbS95dWxhdmEvZW50aXRpZXMvaW1hZ2UvNTU2ZGEzYzAtZjc1ZC0xMWViLWE2ODktNTFiMGI1MmZiOTk5LnBuZw.png" alt="Logo de SLee Dw">
+                    </a>
+                </figure>
+            </div>
+            <div class="caja">
+                <h2>Contactanos</h2>
+                <p>lacanyada@hotmail.es</p>
+                <p>+34 123 456 789</p>
+            </div>
+            <div class="caja">
+                <h2>SIGUENOS</h2>
+                <div class="tito">
+                    <a href="https://twitter.com/?lang=es"><img height="35px" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/1200px-Logo_of_Twitter.svg.png"></a>
+                    <a href="https://www.instagram.com/"><img height="35px" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/1200px-Instagram_logo_2022.svg.png"></a>
+                    <a href="https://es-es.facebook.com/"><img height="35px" width="35px" src="https://www.facebook.com/images/fb_icon_325x325.png"></a>
+                    <a href="https://www.youtube.com/"><img height="35px" width="35px" src="https://upload.wikimedia.org/wikipedia/commons/e/ef/Youtube_logo.png"></a>
+                </div>
+            </div>
+        </div>
+        <div class="dos">
+            <small>&copy; 2023 <b>La Canyada</b> - Todos los Derechos Reservados.</small>
+        </div>
+    </footer>
+</div>
+</body>
+</html>
